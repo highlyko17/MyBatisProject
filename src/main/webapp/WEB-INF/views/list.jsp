@@ -6,26 +6,67 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>free board</title>
+<title>오무식카가</title>
 <style>
-#list {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-#list td, #list th {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align:center;
-}
-#list tr:nth-child(even){background-color: #f2f2f2;}
-#list tr:hover {background-color: #ddd;}
-#list th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #006bb3;
-  color: white;
+	body {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		background-color: #f4f4f4;
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 {
+		text-align: center;
+		color: #006bb3;
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 90%;
+		margin: 20px auto;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+
+	th, td {
+		border: 1px solid #ddd;
+		padding: 15px;
+		text-align: center;
+	}
+
+	th {
+		background-color: #006bb3;
+		color: white;
+	}
+
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	tr:hover {
+		background-color: #ddd;
+	}
+
+	a {
+		text-decoration: none;
+		color: #006bb3;
+	}
+
+	a:hover {
+		color: #004080;
+	}
+
+	#addPost {
+		display: block;
+		width: 90%;
+		margin: 20px auto;
+		text-align: center;
+		background-color: #006bb3;
+		color: white;
+		padding: 10px;
+		border-radius: 5px;
+		text-decoration: none;
+	}
 }
 </style>
 <script>
@@ -36,15 +77,15 @@
 </script>
 </head>
 <body>
-<h1>자유게시판</h1>
+<h1>오무식카가</h1>
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
 	<th>Category</th>
-	<th>Title</th>
-	<th>Writer</th>
+	<th>Name</th>
+	<th>Location</th>
 	<th>Content</th>
-	<th>Regdate</th>
+	<th>Registration Date</th>
 	<th>Revision Date</th>
 	<th>Detail</th>
 	<th>Edit</th>
@@ -68,6 +109,6 @@
 	</tr>
 </c:forEach>
 </table>
-<br/><a href="add">Add New Post</a>
+<br/><a id = "addPost" href="add">Add New Post</a>
 </body>
 </html>
