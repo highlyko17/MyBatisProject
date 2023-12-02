@@ -80,7 +80,7 @@
 <h1>오무식카가</h1>
 <table id="list" width="90%">
 <tr>
-	<th>Id</th>
+	<th>Id</th>가
 	<th>Category</th>
 	<th>Name</th>
 	<th>Location</th>
